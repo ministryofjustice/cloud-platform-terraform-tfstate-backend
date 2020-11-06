@@ -48,7 +48,11 @@ variable "enable_point_in_time_recovery" {
 variable "tags" {
   type = map(string)
   default = {
-    terraform = true
+    terraform       = true
+    contact_email   = "platforms@digital.justice.gov.uk"
+    is_production   = true
+    owner           = "cloud-platform"
+    source_code_url = "https://github.com/ministryofjustice/cloud-platform-infrastructure"
   }
   description = "Additional tags (e.g. `map('BusinessUnit','XYZ')`"
 }
